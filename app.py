@@ -5,7 +5,6 @@ from PIL import Image, ImageTk
 import spotipy
 from spotipy.oauth2 import SpotifyOAuth
 import pygame
-import time
 
 # Emotion to music mapping
 emotion_music_map = {
@@ -19,7 +18,7 @@ emotion_music_map = {
 
 # Spotify Authentication
 sp = spotipy.Spotify(auth_manager=SpotifyOAuth(client_id="4c676720fc164c3ab541a702690869ac",
-                                               client_secret="409b414842824b5cb3fbc234a8a5054c",
+                                               client_secret="client_secret",
                                                redirect_uri="http://localhost:8888/callback",
                                                scope="user-library-read user-read-playback-state user-modify-playback-state"))
 
